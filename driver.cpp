@@ -18,20 +18,17 @@ int main(int argc, char** argv)
     ll->addEnd(6);
     ll->addEnd(8);
     ll->addEnd(2);
+    ll->addFront(13);
+    ll->addFront(17);
     ll->display();
-    int value = ll->removeEnd();
-    
-    ll->display();
+    int value = ll->removeAtIndex(3);
     cout << value << endl;
-    int value2 = ll->removeFront(); // returns the front value and stores it
-    cout << value2 << endl; // displays value removed from front
-    ll->addEnd(9);
-    ll->addFront(5);
-    ll->addFront(1);
     ll->display();
-    int value3 = ll->removeFront();
-    cout << value3 << endl;
+    ll->addAtIndex(2,20);
+    ll->addAtIndex(3,15);
     ll->display();
+    
+    
     return 0;
 }
 

@@ -1,3 +1,4 @@
+
 #include "Node.hpp"
 
 class LinkedList
@@ -11,7 +12,9 @@ class LinkedList
         LinkedList();
         void display();
         void addEnd(int value);
-        void addFront(int value);
         int removeEnd();
+        void addFront(int value);
         int removeFront();
+        int removeAtIndex(int index);
+        int addAtIndex(int index, int value);
 };
